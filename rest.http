@@ -1,0 +1,8 @@
+### CLIENT
+POST http://localhost:3333/client
+Content-Type: application/json
+
+{
+  "username": "fabricyo",
+  "password": "123456"
+}
