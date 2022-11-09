@@ -1,5 +1,6 @@
-import express from 'express'
+import express from 'express';
 
-const app = express()
+const app = express();
 
-app.listen(3333, () => console.log('Server is running...'))
+// eslint-disable-next-line no-console
+app.listen(3333, () => console.log('Server is running...'));
