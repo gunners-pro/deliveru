@@ -14,3 +14,11 @@ model Deliveryman {
 
   @@map("deliveryman")
 }
+
+model CLients {
+  id       String @id @default(uuid())
+  username String @unique
+  password String
+
+  @@map("cLients")
+}
