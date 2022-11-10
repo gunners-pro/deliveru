@@ -6,12 +6,20 @@ Content-Type: application/json
   "username": "fabricyo",
   "password": "123456"
 }
-### AUTHENTICATE
-POST http://localhost:3333/authenticate
+### AUTHENTICATE CLIENT
+POST http://localhost:3333/client/authenticate
 Content-Type: application/json
 
 {
   "username": "fabricyo",
+  "password": "123456"
+}
+### AUTHENTICATE DELIVERYMAN
+POST http://localhost:3333/deliveryman/authenticate
+Content-Type: application/json
+
+{
+  "username": "Lilian",
   "password": "123456"
 }
 ### DELIVERYMAN
