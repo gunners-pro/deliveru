@@ -9,10 +9,10 @@ Content-Type: application/json
 ### DELIVERY
 POST http://localhost:3333/delivery
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYnJpY3lvIiwiaWF0IjoxNjY4MTI5NjMwLCJleHAiOjE2NjgyMTYwMzAsInN1YiI6IjJjM2E4NjA1LTVjOTItNDJkZS04OTBjLTkwMjc0ODI4OGVkYSJ9.7HE1rzlpZI-E8iftSZq3Ki1dyPx8KxBFkSEmB8c7I7s
 
 {
-  "item_name": "Monitor 29\" WideScreen ",
-  "id_client": "2c3a8605-5c92-42de-890c-902748288eda"
+  "item_name": "Batata Frita com coca cola"
 }
 ### AUTHENTICATE CLIENT
 POST http://localhost:3333/client/authenticate
