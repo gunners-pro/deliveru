@@ -13,6 +13,7 @@ export class CreateDeliverymanUseCase {
       where: {
         username: {
           mode: 'insensitive',
+          equals: username,
         },
       },
     });

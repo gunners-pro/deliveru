@@ -13,6 +13,7 @@ export class CreateClientUseCase {
       where: {
         username: {
           mode: 'insensitive',
+          equals: username,
         },
       },
     });
