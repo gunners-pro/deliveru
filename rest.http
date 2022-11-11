@@ -1,4 +1,4 @@
-### CLIENT
+### CREATE CLIENT
 POST http://localhost:3333/client
 Content-Type: application/json
 
@@ -6,15 +6,15 @@ Content-Type: application/json
   "username": "fabricyo",
   "password": "123456"
 }
-### DELIVERY
+### CREATE DELIVERY
 POST http://localhost:3333/delivery
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYnJpY3lvIiwiaWF0IjoxNjY4MTI5NjMwLCJleHAiOjE2NjgyMTYwMzAsInN1YiI6IjJjM2E4NjA1LTVjOTItNDJkZS04OTBjLTkwMjc0ODI4OGVkYSJ9.7HE1rzlpZI-E8iftSZq3Ki1dyPx8KxBFkSEmB8c7I7s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYnJpY3lvIiwiaWF0IjoxNjY4MTYyMjUwLCJleHAiOjE2NjgyNDg2NTAsInN1YiI6IjYxMmE0YmJmLTJlNGUtNDZhNS05MDJjLTVmODRlYTg2YmNmNSJ9.OvakLD6nIaCTgWNZr7AYL36MYVD07I0Iip965iqQqKg
 
 {
   "item_name": "Batata Frita com coca cola"
 }
-###
+### LIST DELIVERIES
 GET http://localhost:3333/delivery/available
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhYnJpY3lvIiwiaWF0IjoxNjY4MTI5NjMwLCJleHAiOjE2NjgyMTYwMzAsInN1YiI6IjJjM2E4NjA1LTVjOTItNDJkZS04OTBjLTkwMjc0ODI4OGVkYSJ9.7HE1rzlpZI-E8iftSZq3Ki1dyPx8KxBFkSEmB8c7I7s
@@ -35,7 +35,7 @@ Content-Type: application/json
   "username": "Lilian",
   "password": "123456"
 }
-### DELIVERYMAN
+### CREATE DELIVERYMAN
 POST http://localhost:3333/deliveryman
 Content-Type: application/json
 
@@ -43,3 +43,7 @@ Content-Type: application/json
   "username": "Lilian",
   "password": "123456"
 }
+### GET DELIVERY
+PUT  http://localhost:3333/delivery/update-deliveryman/751111a7-c681-48ef-b1e1-f2328601ecda
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxpbGlhbiIsImlhdCI6MTY2ODE2MjIwNSwiZXhwIjoxNjY4MjQ4NjA1LCJzdWIiOiIwZjgzZTIzMC05NWNjLTRmZjQtOGZiYS04MmRlM2NiMDlhN2UifQ.aUWykP3PXGu_bLhqQ8kKik_sJ2ly7qOPTfisZG-fZTA
