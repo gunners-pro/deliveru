@@ -1,6 +1,7 @@
 import { Router } from 'express';
 
 import { ensureAuthenticateClient } from './middlewares/ensureAuthenticateClient';
+import { ensureAuthenticateDeliveryman } from './middlewares/ensureAuthenticateDeliveryman';
 import { AuthenticateClientController } from './modules/account/authenticateClient/AuthenticateClientController';
 import { AuthenticateDeliverymanController } from './modules/account/authenticateDeliveryman/AuthenticateDeliverymanController';
 import { CreateClientController } from './modules/clients/useCases/createClient/CreateClientController';
@@ -30,4 +31,8 @@ routes.post(
   ensureAuthenticateClient,
   createDeliveryController.handle,
 );
-routes.get('/delivery/available', findAllWithoutEndDateUseCase.handle);
+routes.get(
+  '/delivery/available',
+  ensureAuthenticateDeliveryman,
+  findAllWithoutEndDateUseCase.handle,
+);
