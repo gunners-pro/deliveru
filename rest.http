@@ -6,6 +6,14 @@ Content-Type: application/json
   "username": "fabricyo",
   "password": "123456"
 }
+### DELIVERY
+POST http://localhost:3333/delivery
+Content-Type: application/json
+
+{
+  "item_name": "Monitor 29\" WideScreen ",
+  "id_client": "2c3a8605-5c92-42de-890c-902748288eda"
+}
 ### AUTHENTICATE CLIENT
 POST http://localhost:3333/client/authenticate
 Content-Type: application/json
