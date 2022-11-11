@@ -40,6 +40,10 @@ Content-Type: application/json
   "username": "Lilian",
   "password": "123456"
 }
+### LIST DELIVERYMAN DELIVERIES
+GET http://localhost:3333/deliveryman/deliveries
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxpbGlhbiIsImlhdCI6MTY2ODIwNzM2MywiZXhwIjoxNjY4MjkzNzYzLCJzdWIiOiIwZjgzZTIzMC05NWNjLTRmZjQtOGZiYS04MmRlM2NiMDlhN2UifQ.zmv0GJoO8pzCHqN6DWhP5p1vwOvMMldvcynaW6H866w
 ### CREATE DELIVERYMAN
 POST http://localhost:3333/deliveryman
 Content-Type: application/json
